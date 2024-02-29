@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        li {
+            background: #FFFFFF;
+            box-shadow: 1px 1px 12px 1px #cccccc;
+            width: 200px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul>
+        <li style="transform: translateX(40px) translateY(60px) perspective(500px) translateZ(-40px);">1</li>
+        <li style="transform: translateX(20px) translateY(30px) perspective(500px) translateZ(-20px);">2</li>
+        <li style="transform: translateX(0) translateY(0) perspective(500px) translateZ(0);">3</li>
+        <li style="transform: translateX(20px) translateY(-30px) perspective(500px) translateZ(-20px);z-index: -1;">4</li>
+        <li style="transform: translateX(40px) translateY(-60px) perspective(500px) translateZ(-40px);z-index: -2;">5</li>
+    </ul>
+</div>
+</body>
+</html>
